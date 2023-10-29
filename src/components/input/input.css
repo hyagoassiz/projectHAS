@@ -1,0 +1,21 @@
+input {
+    background-color:#3A3E49;
+    height: 40px;
+    width: 250px;
+    border-radius: 4px;
+    margin-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: none;
+    color: #FFBA33;
+}
+
+input::placeholder{
+    color: #434c63;
+}
+
+input:focus{
+    outline: none; /* Remove a borda de foco padrão */
+    /* Adicione seu estilo de foco personalizado aqui, como uma borda diferente ou sombreamento */
+    box-shadow: 0 0 3px #FFBA33; /* Exemplo: sombreamento ao focar */
+}

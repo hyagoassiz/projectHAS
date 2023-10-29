@@ -1,0 +1,14 @@
+.category {
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    height: 60px;
+    width: 95%;
+    background-color: white;
+    margin-top: 10px;
+    border-radius: 8px;
+}
+
+.category h2 {
+    margin-left: 20px;
+    color: black;
+}
