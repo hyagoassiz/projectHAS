@@ -1,5 +1,6 @@
 // Nav.js
 import React from "react";
+import { Link } from "react-router-dom"
 import { auth } from '../../firebaseConnection';
 import { signOut } from "firebase/auth";
 import './Nav.css';
@@ -26,14 +27,17 @@ function Nav() {
                 <button>+ NOVO CLIENTE</button><br />
 
                 <ul className="menu-section">
-                    <li><img className="nav-icon" src={painelIcon} alt="Painel" /> Painel</li>
-         
-                        <li><img className="nav-icon" src={clientesIcon} alt="Clientes" /> Clientes</li>
-                        <ul className="sub-li">
-                            <li>Ativos</li>
+                    <Link to="/painel">
+                        <li><img className="nav-icon" src={painelIcon} alt="Painel" /> Painel</li>
+                    </Link>
+
+                    <li><img className="nav-icon" src={clientesIcon} alt="Clientes" /> Clientes</li>
+                    <ul className="sub-li">
+                        <Link to="/clientes/ativos"><li>Ativos</li></Link>
+
                             <li>Inativos</li>
-                        </ul>
-        
+                    </ul>
+
                     <li><img className="nav-icon" src={configIcon} alt="Configurações" /> Configurações</li>
                     <li onClick={handleLogout}><img className="nav-icon" src={logoffIcon} alt="Configurações" /> Sair</li>
                 </ul>

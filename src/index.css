@@ -33,8 +33,14 @@ li:hover{
 
 
 .body-container {
-  display: flex;
+  display: block;
   align-items: center; /* Ou outro valor para alinhar verticalmente */
   margin-left: 21%;
   /* Outros estilos CSS necessários */
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+  
 }
